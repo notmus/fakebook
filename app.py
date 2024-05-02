@@ -40,13 +40,13 @@ def main():
     # Loading the model
     if st.button("Predict"):
         # Load the saved model
-        model = load_model('/content/drive/MyDrive/Colab Notebooks/ML/model')  # Replace 'model' with the path to your saved model
+        model = load_model('model')  # Replace 'model' with the path to your saved model
 
         # Create target encoder (assuming your target variable is 'label')
         encoder = TargetEncoder()
 
         # Load csv file that maps original product name to encoded product name
-        transformed_data = pd.read_csv("/content/drive/MyDrive/Colab Notebooks/ML/product_name_mapping.csv")
+        transformed_data = pd.read_csv("product_name_mapping.csv")
 
         # Get the transformed data from PyCaret (assuming it's stored in 'transformed_data')
         #transformed_data = model.data.copy()  # Make a copy to avoid modifying original data
