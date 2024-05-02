@@ -24,7 +24,7 @@ def main():
     st.sidebar.write("Key in the Product Name, Price, Condition, and User Joined Year. Once those have been inputted, press Predict.")
 
     # Product Name input
-    Name = st.text_input("Product Name:", "")
+    Name = st.text_input("Product Name (Currently limited to Nike Air MAx and Air Jordan):", "")
 
     # Price input
     Price = st.text_input("Price:", "")
