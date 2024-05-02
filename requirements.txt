@@ -1,6 +1,6 @@
 pickle4
 pycaret
-scikit-learn==1.4.0
+scikit-learn==1.4.1
 numpy
 pandas
 streamlit_extras
